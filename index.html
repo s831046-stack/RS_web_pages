@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>耀聖資訊｜首頁圖稿第二版</title>
+<style>
+:root{--ink:#142b22;--muted:#4b635a;--green:#185643;--forest:#10291f;--mint:#edf4ef;--cream:#f8f8f3;--amber:#dba93b;--gold-light:#f8dea1;--rule:#d7e4dd;--measure:1240px;--serif:"Noto Serif TC","Source Han Serif TC","PMingLiU",serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:white;color:var(--ink);font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",sans-serif;line-height:1.65}h1,h2,h3,p,figure,ul,dl,dd{margin:0}ul{padding:0;list-style:none}img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit;text-decoration:none}a:focus-visible,summary:focus-visible{outline:3px solid #d87d20;outline-offset:4px}.wrap{width:min(var(--measure),calc(100% - 112px));margin-inline:auto}.top{height:82px;display:flex;align-items:center;border-bottom:1px solid #e3ebe6;background:#fff}.nav{display:flex;justify-content:space-between;align-items:center;gap:28px}.brand{display:inline-flex;align-items:center;flex:none}.brand img{width:auto;height:40px;object-fit:contain}.nav ul{display:flex;gap:36px;font-size:15px;font-weight:700;align-items:center}.nav a:hover,.more:hover{text-decoration:underline;text-underline-offset:4px}.nav .login{padding:8px 21px;border:1px solid var(--green);border-radius:4px;color:var(--green);white-space:nowrap}.mobile-nav{display:none}
+.hero{position:relative;min-height:542px;display:flex;align-items:center;background:var(--forest);color:#fff;isolation:isolate;overflow:hidden}.hero-image{position:absolute;inset:0 0 0 auto;width:76%;height:100%;z-index:-2;object-position:57% 48%}.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#07372d 8%,#07372df2 25%,#07372dbb 42%,#07372d26 69%,#07372d0d 100%)}.hero-content{padding-block:74px 90px}.eyebrow{font-size:15px;letter-spacing:.115em;font-weight:800}.hero .eyebrow{display:inline-flex;align-items:center;gap:11px;color:#f8d4a0}.hero .eyebrow:before{content:"";width:23px;height:2px;background:var(--amber)}h1{margin:18px 0;font-size:clamp(54px,5.3vw,80px);letter-spacing:.005em;line-height:1.13;font-weight:800}.hero p:not(.eyebrow){max-width:510px;color:#e6f0eb;font-size:18px;line-height:1.8}.actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:30px}.button{display:inline-flex;align-items:center;justify-content:space-between;min-height:49px;gap:32px;padding:10px 19px;border:1px solid transparent;border-radius:4px;font-weight:800;font-size:15px}.primary{background:var(--amber);color:#2b2b1c}.outline{border-color:#e4ebe5;color:#fff}.outline-green{border-color:var(--green);color:var(--green)}.arrow{font-size:20px;line-height:1;font-weight:400}.button:hover{filter:brightness(.94)}
+.announcement{background:var(--cream);padding:44px 0 52px}.more{color:var(--green);font-weight:800;display:inline-flex;align-items:center;gap:10px;font-size:14px}
+.stats{padding-block:67px 76px;text-align:center}.stats h2,.section-title h2,.support-copy h2{font-size:clamp(30px,3.1vw,44px);line-height:1.28;letter-spacing:-.03em}.subtext{margin-top:14px;color:var(--muted);font-size:16px}.stats dl{display:grid;grid-template-columns:repeat(3,1fr);margin-top:34px}.stats dl>div{display:flex;flex-direction:column-reverse;padding:12px 18px 5px;gap:8px}.stats dl>div+div{border-left:1px solid var(--rule)}.stats dt{font-size:16px;font-weight:700}.stats dd{font-size:clamp(48px,6vw,80px);letter-spacing:-.055em;font-weight:800;color:var(--green);font-variant-numeric:tabular-nums;line-height:1}
+.products{padding:71px 0 80px;background:var(--mint)}.section-title{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:31px}.section-title .eyebrow,.support-copy .eyebrow{color:var(--green);margin-bottom:8px}.section-title .subtext{max-width:690px}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.card{background:#fff;overflow:hidden;border:1px solid #dbebe2;border-radius:8px}.card figure{aspect-ratio:1.9}.card-body{padding:23px 24px 25px}.card h3{font-size:23px;line-height:1.3}.card p{font-size:15px;color:var(--muted);margin-top:10px}.card .scenario{border-top:1px solid var(--rule);margin-top:17px;padding-top:13px;font-size:14px}.scenario strong{color:var(--green);margin-right:7px}
+.support{padding-block:82px}.support-layout{display:grid;grid-template-columns:1.08fr 1fr;gap:65px;align-items:center}.support figure{height:410px;border-radius:8px;overflow:hidden}.support figure img{object-position:48% 50%}.support-items{margin-top:19px}.support-items article{border-top:1px solid var(--rule);padding:15px 0}.support-items h3{font-size:20px;margin-bottom:4px}.support-items p{font-size:15px;color:var(--muted)}
+.cases{background:var(--cream);padding:35px 0 68px}
+.cases .section-title{margin-bottom:24px}
+.case-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:start}
+.case-card{display:flex;flex-direction:column;overflow:hidden;border:1px solid #dde4df;border-radius:20px;background:white;box-shadow:0 3px 12px #172e2410;min-height:100%}
+.case-card figure{position:relative;aspect-ratio:1.5;overflow:hidden}
+.case-card img{object-position:center}
+.case-card figcaption{position:absolute;top:19px;left:19px;border-radius:999px;padding:6px 15px;background:#f6fbf7;color:#185643;font-weight:700;font-size:15px;box-shadow:0 2px 10px #132a2333}
+.case-body{display:flex;flex-direction:column;flex:1;padding:25px 27px 26px}
+.case-body h3{font-size:var(--type-card);line-height:1.35;letter-spacing:-.025em;color:#142330;font-weight:700;text-wrap:balance}
+.case-excerpt{margin-top:14px;color:#455964;font-size:var(--type-body);line-height:1.7}
+.case-notes{margin-top:auto;padding-top:23px}
+.case-notes details{border-top:1px solid #e1e9e4;padding-top:14px}
+.case-notes summary{display:flex;align-items:center;justify-content:space-between;gap:14px;cursor:pointer;list-style:none;color:#185643;font-size:14px;font-weight:700}
+.case-notes summary::-webkit-details-marker{display:none}
+.case-notes summary small{color:#5e7169;font-size:13px;font-weight:500}
+.case-notes summary strong::after{content:" ＋"}
+.case-notes details[open] summary strong::after{content:" −"}
+.case-notes details p{font-size:15px;color:#455964;line-height:1.7;margin-top:10px}
+.case-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.case-tags li{padding:4px 9px;border:1px solid #e3ebe6;border-radius:7px;background:#f6f8f6;color:#3e5550;font-size:13px}
+
+
+
+
+@media(max-width:1000px){.wrap{width:calc(100% - 64px)}.nav ul{gap:14px;font-size:13px}.support-layout{gap:36px}.card h3{font-size:19px}.card-body{padding:18px}.section-title h2{font-size:34px}}
+@media(max-width:740px){.wrap{width:calc(100% - 40px)}.top{height:65px}.desktop-nav{display:none!important}.mobile-nav{display:block;position:relative;z-index:2}.mobile-nav summary{font-size:14px;font-weight:800;cursor:pointer}.mobile-nav ul{background:#fff;display:grid;position:absolute;right:0;top:30px;width:165px;padding:15px;border:1px solid var(--rule);box-shadow:0 7px 24px #0002}.hero{min-height:635px;align-items:end}.hero-image{width:100%;height:65%;object-position:57% 42%}.hero:before{background:linear-gradient(0deg,#07372d 10%,#07372d 43%,#07372dd9 53%,#07372d18 83%)}.hero-content{padding-block:255px 37px}.hero h1{font-size:clamp(39px,10vw,57px);margin-block:12px 14px}.hero .eyebrow{font-size:13px}.hero p:not(.eyebrow){font-size:16px}.actions{gap:8px;margin-top:22px}.button{gap:12px;padding-inline:12px;min-height:45px;font-size:14px}.announcement{padding:31px 0 35px}.support-layout{grid-template-columns:1fr;gap:19px}.stats{padding:42px 0 48px}.stats dd{font-size:clamp(26px,9vw,56px)}.stats dt{font-size:12px}.stats dl{margin-top:20px}.stats dl>div{padding:10px 3px}.products,.support,.cases{padding-block:44px}.section-title{display:block;margin-bottom:19px}.section-title .more{margin-top:13px}.section-title h2,.support-copy h2{font-size:29px}.product-grid{grid-template-columns:1fr;gap:14px}.card figure{aspect-ratio:2.12}.case-grid{grid-template-columns:1fr 1fr}.support figure{height:235px}.support-copy .eyebrow{margin-top:6px}.pending{padding:12px}}
+.hero{min-height:440px;align-items:center;text-align:center}
+.hero-image{width:100%;object-position:64% 46%}
+.hero:before{background:radial-gradient(ellipse at center,#10291fd9 5%,#10291fa1 54%,#10291f59 100%),linear-gradient(0deg,#10291f 0%,#10291f0a 74%)}
+.hero-content{padding-block:12px}
+.hero .eyebrow{position:relative;top:-20px;font-size:14px;color:var(--gold-light)}
+.hero h1{font-family:var(--serif);font-size:clamp(32px,3.5vw,48px);letter-spacing:.012em;line-height:1.25;margin:16px 0 14px}
+.hero p.hero-copy{max-width:730px;margin-inline:auto}
+.hero-copy strong,.hero-copy span{display:block}
+.hero-copy strong{color:var(--gold-light);font-family:var(--serif);font-size:clamp(18px,1.7vw,22px);font-weight:800;line-height:1.55;margin-bottom:8px}
+.hero-copy span{color:#e6eee8;font-size:var(--type-body);line-height:1.7}
+.hero .actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:590px;gap:15px;margin-top:30px}
+.hero .actions{margin-inline:auto}
+.hero .button{justify-content:center;gap:10px;border-radius:16px;border-width:2px;min-height:58px;font-size:15px;font-weight:600;text-align:center}
+.primary{border-color:var(--amber);color:#14291e}
+.outline{border-color:#b0c2b9;background:#10291f40}
+.hero .arrow{font-size:18px;font-weight:600}
+.stats h2,.section-title h2,.support-copy h2{font-family:var(--serif);font-weight:800}
+
+
+
+@media(max-width:740px){
+  .hero{min-height:445px;align-items:center}
+  .hero .eyebrow{top:20px}
+  .hero h1{transform:translateY(20px)}
+  .hero-copy,.hero .actions{transform:translateY(20px)}
+  .hero-image{height:64%;object-position:62% 42%}
+  .hero:before{background:linear-gradient(0deg,#10291f 0%,#10291f 28%,#10291fe8 51%,#10291f69 100%)}
+  .hero h1{font-size:clamp(27px,7.7vw,33px);margin:12px 0}
+  .hero-copy strong{font-size:17px;margin-bottom:8px}
+  .hero .actions{gap:9px;margin-top:22px}
+  .hero .button{padding-inline:8px;gap:7px;min-height:51px;border-radius:12px;font-size:13px}
+  .hero .arrow{font-size:18px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+:root{--nav-height:64px}
+html{scroll-padding-top:var(--nav-height)}
+body{padding-top:0}
+main{padding-top:0}
+@media(min-width:741px){.hero{align-items:flex-start}.hero-content{padding-block:130px 55px}}
+@media(min-width:741px){.hero h1,.hero-copy,.hero .actions{transform:translateY(-10px)}}
+.top{position:fixed;inset:16px 0 auto;height:auto;padding:0;z-index:10;isolation:isolate;border:0;background:transparent;transform:translateY(0);opacity:1;transition:transform .32s cubic-bezier(.2,.8,.2,1),opacity .24s ease}
+.top:before{position:absolute;inset:-16px 0 -16px;z-index:-1;pointer-events:none;content:"";background:radial-gradient(ellipse at 14% 0%,#bcecf3b8,transparent 52%),radial-gradient(ellipse at 84% 0%,#ded8f8b8,transparent 58%);filter:blur(24px)}
+.top.is-hidden{transform:translateY(calc(-100% - 24px));opacity:0;pointer-events:none}
+@media(prefers-reduced-motion:reduce){.top{transition:none}}
+.nav{width:min(1560px,calc(100% - 64px));min-height:62px;padding:3px 13px 3px 26px;gap:clamp(16px,3vw,52px);border:1px solid rgb(255 255 255 / 88%);border-radius:999px;background:rgb(255 255 255 / 88%);box-shadow:0 12px 42px #52668418;backdrop-filter:blur(16px);transition:box-shadow .28s ease,background-color .28s ease}
+.top.is-scrolled .nav{background:rgb(255 255 255 / 94%);box-shadow:0 10px 34px #52668424}
+.nav .desktop-nav{display:flex;justify-content:flex-end;gap:5px;margin-left:auto;margin-right:0;color:#46554f;font-size:clamp(14px,1.05vw,15px);font-weight:700;white-space:nowrap}
+.nav .desktop-nav>li>a,.product-menu summary,.solution-menu summary{display:flex;align-items:center;justify-content:center;width:128px;height:48px;min-height:48px;flex:none;padding:0 17px;border-radius:999px;transition:background-color .2s ease,color .2s ease}
+.product-menu summary{background:#e4f1e7;color:var(--green)}
+.nav .desktop-nav>li>a:hover{background:#e4f1e7;color:var(--green);text-decoration:none}
+.product-menu summary:hover,.product-menu[open] summary,.solution-menu summary:hover,.solution-menu[open] summary{background:#e4f1e7;color:var(--green);text-decoration:none}
+.product-menu,.solution-menu{position:relative}
+.product-menu summary,.solution-menu summary{display:flex;align-items:center;gap:8px;cursor:pointer;list-style:none}
+.product-menu summary::-webkit-details-marker,.solution-menu summary::-webkit-details-marker{display:none}
+.product-menu summary::after,.solution-menu summary::after{content:"";width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px)}
+.product-menu[open] summary::after,.solution-menu[open] summary::after{transform:rotate(225deg)}
+.nav .desktop-nav details:not([open])>ul{display:none}
+.nav .product-menu ul,.nav .solution-menu ul{display:grid;grid-template-columns:repeat(2,minmax(0,260px));position:absolute;z-index:13;top:calc(100% + 7px);right:auto;left:50%;width:min(560px,calc(100vw - 48px));gap:4px 8px;transform:translateX(-50%);background:#fff;border:1px solid #dce5de;border-radius:22px;padding:14px;box-shadow:0 18px 42px #10291f24;white-space:normal}
+.product-menu a,.solution-menu a{display:flex;flex-direction:column;justify-content:center;width:260px;min-height:71px;padding:11px 15px;border-radius:16px;transition:background-color .18s ease}
+.product-menu a strong,.solution-menu a strong{color:#142330;font-size:14px;font-weight:700;letter-spacing:0;line-height:calc(1.35em + 2px)}
+.product-menu a span,.solution-menu a span{margin-top:1px;color:#5f718b;font-size:12px;font-weight:400;line-height:1.4}
+.product-menu a:hover,.solution-menu a:hover{background:#f0f5fa;text-decoration:none}
+.nav .login{display:inline-flex;align-items:center;justify-content:center;min-height:42px;flex:none;border:0;border-radius:999px;background:var(--green);color:white;padding:4px 23px;font-weight:700;font-size:16px;box-shadow:0 5px 14px #18564326;transition:transform .2s ease,box-shadow .2s ease,background-color .2s ease}
+.nav .login:hover{transform:translateY(-2px);background:var(--forest);box-shadow:0 8px 20px #10291f38}
+@media(max-width:1000px){
+  :root{--nav-height:56px}
+  .top{inset-block-start:10px}
+  .nav{width:calc(100% - 40px);min-height:50px;padding:7px 9px 7px 16px;gap:12px}
+  .nav .brand img{height:34px}
+  .nav .desktop-nav{display:none}
+  .nav .login{margin-left:auto;font-size:14px;padding:3px 15px;border-radius:999px;min-height:34px}
+  .nav .mobile-nav{display:block;position:static}
+  .nav .mobile-nav summary{display:grid;place-items:center;width:44px;height:44px;list-style:none;color:var(--ink);cursor:pointer}
+  .nav .mobile-nav summary::-webkit-details-marker{display:none}
+  .mobile-nav .menu-icon{position:relative;display:block;width:22px;height:16px;background:linear-gradient(currentColor,currentColor) center/100% 2px no-repeat}
+  .mobile-nav .menu-icon::before,.mobile-nav .menu-icon::after{position:absolute;inset-inline:0;height:2px;border-radius:1px;background:currentColor;content:"";transition:transform .16s ease}
+  .mobile-nav .menu-icon::before{top:1px}
+  .mobile-nav .menu-icon::after{bottom:1px}
+  .mobile-nav[open] .menu-icon{background-size:0 2px}
+  .mobile-nav[open] .menu-icon::before{transform:translateY(6px) rotate(45deg)}
+  .mobile-nav[open] .menu-icon::after{transform:translateY(-6px) rotate(-45deg)}
+  @media(prefers-reduced-motion:reduce){.mobile-nav .menu-icon::before,.mobile-nav .menu-icon::after{transition:none}}
+  .nav .mobile-menu{display:block;position:absolute;inset:calc(100% + 10px) 0 auto;width:100%;max-height:calc(100dvh - var(--nav-height) - 24px);overflow-y:auto;overscroll-behavior:contain;background:#fff;border:0;border-radius:20px;padding:8px clamp(18px,4vw,42px) 16px;box-shadow:0 12px 24px #10291f18}
+  .mobile-menu>li{border:0}
+  .mobile-menu>li>a{display:flex;align-items:baseline;gap:12px;min-height:48px;padding:11px 12px;border-radius:999px;color:var(--ink);font-size:16px;font-weight:500;text-decoration:none;transition:background-color .2s ease,color .2s ease}
+  .mobile-menu>li>a span{color:#596e66;font-size:10px;letter-spacing:.045em;font-weight:300}
+  .mobile-menu>li>a:hover,.mobile-menu>li>a:active,.mobile-submenu a:hover,.mobile-submenu a:active{background:#e4f1e7;color:var(--green);text-decoration:none}
+  .mobile-menu>.mobile-menu-action{border:0;margin-top:16px}
+  .mobile-menu>.mobile-menu-action>a{justify-content:center;align-items:center;min-height:48px;padding:10px 16px;border-radius:10px;background:#247b45;color:white;font-size:15px;font-weight:600;text-align:center}
+  .mobile-menu>.mobile-menu-action>a:hover{background:#185643;text-decoration:none}
+  .nav .mobile-submenu{display:block;position:static;width:auto;padding:0;margin:0 0 5px 17px;border:0;border-radius:0;box-shadow:none;background:transparent}
+  .mobile-submenu>li{border:0}
+  .mobile-submenu a{display:block;padding:10px 12px;min-height:44px;border-radius:14px;font-size:13px;font-weight:400;color:#455c52;text-decoration:none;transition:background-color .2s ease,color .2s ease}
+  .mobile-submenu strong{display:block;color:var(--ink);font-size:14px;font-weight:800}
+  .mobile-submenu span{display:block;margin-top:2px;color:#65758b;font-size:12px;font-weight:500;line-height:1.4}
+}
+@media(max-width:360px){.nav{width:calc(100% - 28px);gap:8px}.nav .brand img{height:30px}}
+
+.back-to-top{width:48px;height:48px;border:0;border-radius:50%;background:conic-gradient(from -90deg,#1684c5 var(--scroll-progress,0%),#dfeaf1 var(--scroll-progress,0%));color:#152d3b;box-shadow:0 5px 18px #152d3b1c;transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s ease;transform:translateY(10px) scale(.88);opacity:0}
+.back-to-top:not([hidden]){display:grid;place-items:center;opacity:1;transform:translateY(0) scale(1)}
+.back-to-top:before{position:absolute;content:"";width:42px;height:42px;border-radius:50%;background:#fff}
+.back-to-top-icon{z-index:1;transition:transform .25s ease}
+.back-to-top:hover{background:conic-gradient(from -90deg,#0874ce var(--scroll-progress,0%),#dfeaf1 var(--scroll-progress,0%));box-shadow:0 8px 22px #152d3b30;transform:translateY(-3px) scale(1.03)}
+.back-to-top:hover .back-to-top-icon{transform:translateY(-3px)}
+@media(prefers-reduced-motion:reduce){.nav,.top,.nav .login,.back-to-top,.back-to-top-icon{transition:none}}
+
+.announcement,.products,.support{background:#f4f6f2}
+.announcement{padding-bottom:28px}
+.announcement .section-title{margin-bottom:20px}
+.news-layout{padding:clamp(16px,2.2vw,30px);background:#fff;border:1px solid #d3ded6;border-radius:20px}
+.news-categories{display:flex;justify-content:center;gap:10px;margin-bottom:18px}
+.news-category{display:grid;place-items:center;min-height:44px;padding:7px clamp(14px,2vw,28px);border:1px solid var(--tag-border);border-radius:999px;background:var(--tag-background);color:var(--tag-ink);font-family:inherit;font-size:var(--type-small);font-weight:600;line-height:1.3;white-space:nowrap;cursor:pointer}
+.news-category:hover{background:#d7e9dd}
+.news-category[aria-pressed="true"]{border-color:var(--green);background:var(--green);color:#fff}
+.news-category:focus-visible,.news-more:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+.news-list{margin:0;padding:0;list-style:none;border-block:1px solid var(--rule)}
+.news-list li{display:grid;grid-template-columns:108px minmax(0,1fr);align-items:baseline;gap:12px;padding:12px 10px;color:var(--ink);font-size:var(--type-body);line-height:1.55}
+.news-list li+li{border-top:1px solid var(--rule)}
+.news-list li[hidden]{display:none}
+.news-list time{color:var(--small-ink);font-size:var(--type-small);font-variant-numeric:tabular-nums;white-space:nowrap}
+.news-actions{text-align:center;margin-top:18px}
+@media(max-width:740px){
+  .announcement .section-title{margin-bottom:16px}
+  .news-layout{padding:14px 12px 16px}
+  .news-categories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-bottom:14px}
+  .news-category{padding-inline:2px}
+  .news-list li{grid-template-columns:78px minmax(0,1fr);gap:2px 8px;padding:11px 0}
+  .news-actions{margin-top:14px}
+}
+@media(max-width:390px){
+  .news-list li{grid-template-columns:minmax(0,1fr)}
+}
+.feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}
+.card{border-color:#d3ded6;border-radius:20px;display:flex;flex-direction:column}
+.card figure{position:relative;isolation:isolate;overflow:hidden;aspect-ratio:2.15}
+.support .card figure{height:auto}
+.card figcaption{position:absolute;left:16px;bottom:15px;border:1px solid #e9c77572;padding:4px 11px;background:#12241ee8;color:#f8dea1;border-radius:7px;font-size:15px;font-weight:800}
+.card-body{display:flex;flex-direction:column;flex:1;padding:22px 24px 24px}
+.card h3{font-family:var(--serif);font-size:var(--type-card);font-weight:800;color:#12291f;line-height:1.35;text-wrap:balance}
+.card p{font-size:var(--type-body)}
+.card .scenario{background:#f3f5f1;border:0;border-radius:11px;padding:12px 14px;margin-top:16px;font-size:var(--type-body)}
+.scenario strong{color:#145444}
+.card-foot{margin-top:auto;padding-top:20px;display:flex;justify-content:flex-end}
+.card-cta{display:inline-flex;align-items:center;gap:10px;border-radius:999px;background:#128348;color:#fff;font-size:15px;font-weight:600;padding:10px 18px;min-height:44px}
+.card-cta:hover{background:#0d6738}
+.support{padding-top:0;padding-bottom:57px}
+:root{--type-section:clamp(26px,2.3vw,32px);--type-card:clamp(18px,1.42vw,20px);--type-body:15px}
+.stats h2,.section-title h2{font-size:var(--type-section);line-height:1.3}
+.stats h2{position:relative;top:-10px}
+.section-title{display:block;text-align:center}
+.section-title .subtext{margin-inline:auto}
+.stats dd{font-size:clamp(32px,3.35vw,46px)}
+@media(min-width:741px){.stats dd{font-size:clamp(29px,calc(3.35vw - 3px),43px)}.stats dl{width:min(900px,calc(100% - 50px));grid-template-columns:repeat(3,minmax(0,300px));margin-inline:auto}}
+.stats dt{font-size:var(--type-body)}
+.section-title .subtext,.stats .subtext{font-size:var(--type-body)}
+.stats{padding-block:32px 12px}
+.stats h2{font-size:calc(var(--type-section) - 3px)}
+.stats .subtext{margin-top:4px}
+.stats dl{margin-top:9px}
+.stats dl>div{padding-block:8px 3px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;border:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:1050px) and (min-width:741px){
+  .case-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:740px){
+  :root{--type-section:clamp(21px,6.15vw,24px);--type-card:18px;--type-body:14px}
+  .announcement{padding-bottom:19px}
+  .support{padding-bottom:19px}
+  .cases{padding-top:19px}
+  .stats dd{font-size:clamp(22px,7.15vw,31px)}
+  .stats dt{font-size:12px}
+  .stats{padding-block:30px 12px}
+  .stats dl>div{padding-block:6px 3px}
+  .feature-grid{grid-template-columns:1fr;gap:14px}
+  .card-body{padding:17px 17px 20px}
+  .case-grid{grid-template-columns:1fr;gap:16px}
+  .case-body{padding:19px 18px 20px}
+  .case-notes{padding-top:17px}
+  .case-card figcaption{top:13px;left:13px}
+}
+
+:root{
+  --type-small:13px;
+  --small-line:1.45;
+  --small-ink:#4d635a;
+  --tag-background:#e5f0e8;
+  --tag-border:#cfdfd4;
+  --tag-ink:#185643;
+}
+.card figcaption,.case-card figcaption,.case-tags li{
+  display:inline-flex;
+  align-items:center;
+  padding:4px 10px;
+  border:1px solid var(--tag-border);
+  border-radius:999px;
+  background:var(--tag-background);
+  color:var(--tag-ink);
+  font-family:inherit;
+  font-size:var(--type-small);
+  line-height:var(--small-line);
+  font-weight:700;
+}
+.card figcaption,.case-card figcaption{box-shadow:0 2px 8px #132a2329}
+.case-notes summary small,.footer .bottom{
+  font-family:inherit;
+  font-size:var(--type-small);
+  line-height:var(--small-line);
+  font-weight:500;
+}
+.case-notes summary small{color:var(--small-ink)}
+@media(max-width:740px){:root{--type-small:12px}}
+.footer{position:relative;isolation:isolate;overflow:hidden;background:#fff;color:#19372b;padding:clamp(38px,5vw,66px) 0 20px;border-top:1px solid #e4ebe2}
+.footer>.wrap{position:relative;z-index:1}
+.footer-grid{display:grid;grid-template-columns:minmax(270px,1.7fr) repeat(3,minmax(120px,1fr)) minmax(190px,1.2fr);gap:clamp(8px,calc(2vw - 10px),20px)}
+.footer .brand img{height:43px}
+.footer-company .brand{margin-bottom:14px}
+.footer p,.footer-col h2{color:#50675b}
+.footer p{font-size:calc(var(--type-body) - 1px);line-height:calc(1.6em - 2px)}
+.footer-company p{max-width:31ch}
+.footer-company p+p{margin-top:8px}
+.footer-company p a{color:#19372b;font-weight:700;font-variant-numeric:tabular-nums}
+.footer-company p a:hover{text-decoration:underline}
+.footer-col{min-width:0}
+.footer-col h2{margin:4px 0 18px;font-size:clamp(14px,calc(1.2vw - 1px),17px);font-weight:800;line-height:calc(1.35em - 2px);letter-spacing:.025em}
+.footer-links{display:grid;gap:7px}
+.footer-links a{color:#142b22;font-size:calc(var(--type-body) - 1px);line-height:calc(1.5em - 2px);text-decoration:none}
+.footer-links a:hover{color:var(--green);text-decoration:underline;text-underline-offset:4px}
+.footer-contact-list{display:grid;gap:11px}
+.footer-contact-list a,.footer-contact-list p{display:flex;align-items:flex-start;gap:11px;color:#142b22;font-size:calc(var(--type-body) - 1px);line-height:calc(1.55em - 2px);text-decoration:none}
+.footer-contact-list span{white-space:nowrap}
+.footer-grid>.footer-col:last-child h2,.footer-grid>.footer-col:last-child .footer-contact-list{justify-items:start;text-align:left}
+.footer-grid>.footer-col:last-child .footer-contact-list a,.footer-grid>.footer-col:last-child .footer-contact-list p{justify-content:flex-start}
+.footer-contact-list a:hover{color:var(--green)}
+.footer-contact-icon{flex:none;width:19px;color:#247b45;font-size:18px;line-height:1.4;text-align:center;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.service-phones{position:relative;width:min(100%,260px);margin-top:20px}
+.service-phones summary{position:relative;display:flex;align-items:center;justify-content:center;width:100%;min-height:46px;padding:8px 36px 8px 16px;border-radius:999px;background:var(--green);color:#fff;list-style:none;cursor:pointer;font-size:calc(var(--type-body) - 1px);font-weight:700;text-align:center;box-shadow:0 5px 14px #18564326}
+.service-phones summary::-webkit-details-marker{display:none}
+.service-phones summary::after{position:absolute;right:17px;top:50%;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-65%) rotate(45deg);content:""}
+.service-phones[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.service-phones ul{display:grid;width:100%;grid-template-columns:minmax(0,1fr);gap:0;margin-top:12px;padding:9px 13px;border:1px solid #dce8e0;border-radius:15px;background:#fff;box-shadow:0 8px 24px #19372b10}
+.service-phones a{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:38px;padding:6px 2px;border-bottom:1px solid #e8eee9;color:#19372b;font-size:calc(var(--type-small) - 1px);line-height:calc(1.4em - 2px);text-decoration:none}
+.service-phones li:last-child a{border-bottom:0}
+.service-phones a:hover{color:#185643}
+.service-phones strong{font-weight:700}
+.service-number{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.footer .bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:clamp(32px,4vw,54px);padding-top:15px;border-top:1px solid #dce6df;color:#50675b}
+@media(max-width:1000px){.footer-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 12px}}
+@media(max-width:740px){
+  .footer{padding-top:36px}
+  .footer-grid{grid-template-columns:minmax(0,1fr);gap:26px}
+  .footer .brand img{height:38px}
+  .footer-company .brand{margin-bottom:10px}
+  .footer-col{padding-top:18px;border-top:1px solid #e6ece4}
+  .footer-company{padding-top:0;border-top:0}
+  .footer-col h2{margin:0 0 12px}
+  .footer-links{gap:4px}
+  .footer-contact-list{gap:7px}
+  .footer-grid>.footer-col:last-child h2,.footer-grid>.footer-col:last-child .footer-contact-list{justify-items:start;text-align:left}
+  .footer-grid>.footer-col:last-child .footer-contact-list a,.footer-grid>.footer-col:last-child .footer-contact-list p{justify-content:flex-start}
+  .footer .bottom{align-items:flex-start;flex-direction:column;margin-top:26px;padding-top:12px}
+}
+.back-to-top{position:fixed;inset:auto calc(18px + env(safe-area-inset-right)) calc(18px + env(safe-area-inset-bottom)) auto;z-index:13;width:48px;height:48px;border:2px solid #fff;border-radius:50%;background:conic-gradient(from -90deg,var(--amber) var(--scroll-progress,0%),#e1e8ef var(--scroll-progress,0%));color:#152d3b;box-shadow:0 5px 18px #152d3b1c;cursor:pointer;transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s ease,bottom .25s ease;transform:translateY(10px) scale(.88);opacity:0}
+.back-to-top:not([hidden]){display:grid;place-items:center}
+.back-to-top:not([hidden]){opacity:1;transform:translateY(0) scale(1)}
+.back-to-top:before{position:absolute;content:"";width:42px;height:42px;border-radius:50%;background:#fff}
+.back-to-top:hover{background:conic-gradient(from -90deg,var(--amber) var(--scroll-progress,0%),#e1e8ef var(--scroll-progress,0%));box-shadow:0 8px 22px #152d3b30;transform:translateY(-3px) scale(1.03)}
+.back-to-top:hover .back-to-top-icon{transform:translateY(-3px)}
+.back-to-top:focus-visible{outline:3px solid #1684c5;outline-offset:3px}
+.back-to-top-icon{position:relative;z-index:1;width:18px;height:18px;transition:transform .25s ease}
+.back-to-top-icon::before,.back-to-top-icon::after{content:"";position:absolute}
+.back-to-top-icon::before{top:2px;left:4px;width:8px;height:8px;border-top:2px solid currentColor;border-left:2px solid currentColor;transform:rotate(45deg)}
+.back-to-top-icon::after{top:3px;bottom:0;left:8px;width:2px;border-radius:1px;background:currentColor}
+.mobile-quick-actions{display:none}
+@media(min-width:741px){.mobile-quick-actions{display:none!important}}
+@media(max-width:740px){
+  main{padding-top:0}
+  .mobile-quick-actions{position:fixed;inset:auto 7px calc(5px + env(safe-area-inset-bottom));z-index:12;display:grid;grid-template-columns:1.15fr 1fr;align-items:center;gap:8px;min-height:64px;padding:3px 5px;border:1px solid #dce4ec;border-radius:18px;background:rgb(255 255 255 / 96%);box-shadow:0 8px 30px #152d3b1c;backdrop-filter:blur(14px);transform:translateY(calc(100% + 24px));opacity:0;pointer-events:none;transition:transform .3s cubic-bezier(.2,.8,.2,1),opacity .2s ease}
+  .mobile-quick-actions.is-visible{transform:translateY(0);opacity:1;pointer-events:auto}
+  .mobile-quick-actions a{display:flex;align-items:center;justify-content:center;gap:9px;min-width:0;min-height:38px;border-radius:18px;color:#142330;font-size:clamp(10px,calc(4.2vw - 5px),14px);font-weight:600;white-space:nowrap}
+  .mobile-quick-actions .quick-line{min-height:44px;border-radius:12px;background:#008b45;color:white}
+  .mobile-quick-actions svg{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+  .mobile-quick-actions .quick-form svg{width:19px;height:19px}
+  body.has-mobile-actions .back-to-top{bottom:calc(108px + env(safe-area-inset-bottom))}
+}
+@media(prefers-reduced-motion:reduce){.mobile-quick-actions{transition:none}}
+.cta{position:relative;isolation:isolate;overflow:hidden;padding-bottom:calc(clamp(30px,4vw,46px) + 80px);background:#fbfcf7}
+.contact-backdrop{position:absolute;inset:0 0 auto;z-index:-1;height:365px;background:var(--forest)}
+.contact-backdrop img{object-position:62% 41%}
+.contact-backdrop::after{position:absolute;inset:0;content:"";background:linear-gradient(90deg,#10291fe8 5%,#10291f9e 54%,#10291f42 100%),linear-gradient(0deg,#10291f70,transparent 55%)}
+.contact-heading{padding-block:clamp(40px,5vw,65px) clamp(31px,4vw,47px);color:#fff}
+.contact-heading h2{font-family:var(--serif);font-size:clamp(24px,2.95vw,35px);font-weight:800;line-height:1.22;letter-spacing:-.015em}
+.contact-heading p{margin-top:13px;color:#e4eee8;font-size:var(--type-body);line-height:1.6}
+.contact-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));overflow:hidden;border-radius:14px;box-shadow:0 13px 28px #10291f24}
+.contact-option{display:flex;flex-direction:column;align-items:center;min-width:0;min-height:277px;padding:29px clamp(15px,2.3vw,27px) 25px;text-align:center;background:#174639;color:#fff}
+.contact-option:nth-child(2){background:#102e25}
+.contact-option:nth-child(3){background:#1e5041}
+.contact-option h3{font-size:clamp(15px,1.42vw,19px);font-weight:500;line-height:1.35}
+.contact-option p{max-width:26ch;margin:13px 0 21px;color:#e0ebe5;font-size:var(--type-body);line-height:1.65}
+.contact-icon{position:relative;display:block;flex:none;width:25px;height:23px;margin-top:13px;color:#a8c5b4}
+.contact-icon.calendar{border:1.5px solid currentColor;border-radius:4px}
+.contact-icon.calendar::before{position:absolute;inset:5px 0 auto;border-top:1.5px solid currentColor;content:""}
+.contact-icon.calendar::after{position:absolute;left:5px;top:-4px;width:10px;height:5px;border-inline:1.5px solid currentColor;content:""}
+.contact-icon.screen{height:18px;margin-bottom:5px;border:1.5px solid currentColor;border-radius:3px}
+.contact-icon.screen::before,.contact-icon.screen::after{position:absolute;left:50%;background:currentColor;transform:translateX(-50%);content:""}
+.contact-icon.screen::before{width:1px;height:5px;top:100%}
+.contact-icon.screen::after{width:13px;height:1px;top:calc(100% + 4px)}
+.contact-icon.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px;width:23px}
+.contact-icon.tiles i{border:1px solid currentColor;border-radius:2px}
+.contact-action{position:relative;display:grid;place-items:center;width:min(100%,212px);min-height:46px;margin-top:auto;padding:7px 30px;border-radius:999px;background:#f8fbf8;color:var(--forest);font-size:15px;font-weight:700}
+.contact-action::after{position:absolute;right:18px;width:6px;height:6px;border-top:1.5px solid currentColor;border-right:1.5px solid currentColor;transform:rotate(45deg);content:""}
+.contact-action:hover{background:#e3efe8}
+.contact-option:first-child .contact-action{background:var(--amber)}
+.contact-option:first-child .contact-action:hover{background:#e7b746}
+.contact-action:focus-visible{outline-color:var(--gold-light)}
+@media(max-width:740px){
+  .cta{padding-bottom:100px}
+  .contact-backdrop{height:252px}
+  .contact-backdrop img{object-position:60% 40%}
+  .contact-backdrop::after{background:linear-gradient(90deg,#10291fe6,#10291f79)}
+  .contact-heading{padding-block:31px 20px}
+  .contact-heading h2{font-size:clamp(18px,5.4vw,24px)}
+  .contact-heading p{max-width:25ch;margin-top:9px}
+  .contact-options{grid-template-columns:minmax(0,1fr);border-radius:11px}
+  .contact-option{display:grid;grid-template-columns:23px minmax(0,1fr);align-items:start;column-gap:10px;min-height:0;padding:16px;text-align:left}
+  .contact-option h3,.contact-option p,.contact-action{grid-column:2}
+  .contact-option h3{font-size:14px}
+  .contact-option p{max-width:none;margin:4px 0 10px;line-height:1.55}
+  .contact-icon{grid-column:1;grid-row:1;margin:2px 0 0;transform:scale(.72);transform-origin:top left}
+  .contact-action{width:100%;min-height:44px;font-size:14px}
+}
+.clinic-helper-launcher{position:fixed;right:calc(18px + env(safe-area-inset-right));bottom:calc(82px + env(safe-area-inset-bottom));z-index:15;display:flex;align-items:center;gap:9px;min-height:54px;padding:0 19px;border:0;border-radius:999px;background:#c2410c;color:#fff;font-family:inherit;font-size:15px;font-weight:700;line-height:1.2;box-shadow:0 8px 25px #10291f35;cursor:pointer;transition:transform .2s ease,background .2s ease}
+.clinic-helper-launcher:hover{transform:translateY(-2px);background:#9a3412}
+.clinic-helper-launcher:focus-visible,.clinic-helper-close:focus-visible,.clinic-helper-send:focus-visible,.clinic-helper-suggestion:focus-visible{outline:3px solid #e4b748;outline-offset:3px}
+.clinic-helper-launcher svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.clinic-helper-panel{position:fixed;right:18px;bottom:calc(146px + env(safe-area-inset-bottom));z-index:16;display:flex;flex-direction:column;width:min(400px,calc(100vw - 28px));height:min(590px,calc(100dvh - 175px));min-height:360px;overflow:hidden;border:1px solid #d9e5dd;border-radius:22px;background:#f7faf7;color:#19372b;box-shadow:0 20px 60px #10291f30;font-family:inherit}
+.clinic-helper-panel[hidden]{display:none}
+.clinic-helper-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:17px 18px;background:#185643;color:#fff}
+.clinic-helper-head strong{display:block;font-size:16px;line-height:1.35}
+.clinic-helper-head span{display:block;margin-top:3px;color:#d6e9dc;font-size:12px}
+.clinic-helper-close{display:grid;place-items:center;flex:none;width:36px;height:36px;border:1px solid #ffffff65;border-radius:50%;background:transparent;color:#fff;font-size:23px;line-height:1;cursor:pointer}
+.clinic-helper-notice{padding:10px 15px;border-bottom:1px solid #e4ece5;background:#edf4ee;color:#51685b;font-size:12px;line-height:1.55}
+.clinic-helper-messages{display:flex;flex:1;flex-direction:column;gap:12px;overflow:auto;padding:16px 14px;overscroll-behavior:contain}
+.clinic-helper-message{max-width:94%;padding:12px 13px;border:1px solid #e0e8e1;border-radius:15px 15px 15px 5px;background:#fff;color:#263b31;font-size:14px;line-height:1.65;overflow-wrap:anywhere}
+.clinic-helper-message-user{align-self:flex-end;border-color:#d4e5d8;border-radius:15px 15px 5px 15px;background:#e7f1e9}
+.clinic-helper-message p+p{margin-top:9px}
+.clinic-helper-message a{color:#176347;font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.clinic-helper-source{display:block;margin-top:8px;padding-top:7px;border-top:1px solid #e7ece7;color:#68796f;font-size:12px}
+.clinic-helper-suggestions{display:flex;flex-wrap:wrap;gap:7px;padding:0 14px 12px}
+.clinic-helper-suggestion{padding:7px 10px;border:1px solid #c9ddd0;border-radius:999px;background:#fff;color:#185643;font-family:inherit;font-size:12px;font-weight:600;line-height:1.35;cursor:pointer}
+.clinic-helper-suggestion:hover{background:#e8f2ea}
+.clinic-helper-form{display:flex;gap:8px;padding:11px 12px calc(12px + env(safe-area-inset-bottom));border-top:1px solid #dfe8e0;background:#fff}
+.clinic-helper-input{flex:1;min-width:0;height:44px;padding:0 13px;border:1px solid #cbd8ce;border-radius:12px;background:#fff;color:#19372b;font-family:inherit;font-size:14px}
+.clinic-helper-input:focus{border-color:#39815d;outline:3px solid #39815d25}
+.clinic-helper-send{flex:none;min-width:66px;padding:0 14px;border:0;border-radius:12px;background:#185643;color:#fff;font-family:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.clinic-helper-send:disabled{background:#9aaca0;cursor:not-allowed}
+@media(max-width:740px){
+  .clinic-helper-launcher{right:12px;bottom:calc(82px + env(safe-area-inset-bottom));min-height:50px;padding-inline:15px;font-size:14px}
+  .clinic-helper-panel{right:10px;bottom:calc(78px + env(safe-area-inset-bottom));width:calc(100vw - 20px);height:min(72dvh,620px);min-height:330px;border-radius:19px}
+  .clinic-helper-head{padding:14px 15px}
+}
+@media(prefers-reduced-motion:reduce){.clinic-helper-launcher{transition:none}}
+</style>
+</head>
+<body>
+<header class="top">
+  <nav class="wrap nav" aria-label="主要導覽">
+    <a class="brand" href="#home"><img src="RS_logo.svg" width="739" height="190" alt="耀聖資訊首頁"></a>
+    <ul class="desktop-nav">
+      <li><a href="#news">健保訊息</a></li>
+      <li><details class="product-menu"><summary>服務項目</summary><ul>
+        <li><a href="#clinic-system"><strong>醫療資訊管理系統</strong><span>六代雲系統．標準版・旗艦版．藥局</span></a></li>
+        <li><a href="#medical-records"><strong>電子病歷管理</strong><span>電子病歷・圖形病歷</span></a></li>
+        <li><a href="#news"><strong>健保申報服務</strong><span>網路申報・申報管理</span></a></li>
+        <li><a href="#addons"><strong>網路預約掛號</strong><span>線上預約・預約管理</span></a></li>
+        <li><a href="#medical-records"><strong>視訊診療服務</strong><span>視訊診療・遠距應用</span></a></li>
+        <li><a href="#support"><strong>醫療資訊整合</strong><span>轉診轉檢・跨院介接</span></a></li>
+        <li><a href="#addons"><strong>診所加值應用</strong><span>IC 卡・藥袋・候診看板</span></a></li>
+        <li><a href="#support"><strong>資料備份與安全</strong><span>遠端備份・資料保護</span></a></li>
+      </ul></details></li>
+      <li><details class="solution-menu"><summary>解決方案</summary><ul>
+        <li><a href="#support"><strong>診所開業整合方案</strong><span>從籌備到開業，一站式資訊規劃</span></a></li>
+        <li><a href="clinic_location_evaluator.html"><strong>診所開業地點</strong><span>一鍵解析在地的醫療需求</span></a></li>
+        <li><a href="#products"><strong>診所營運效率提升</strong><span>優化看診流程與院務管理</span></a></li>
+        <li><a href="#medical-records"><strong>電子病歷數位轉型</strong><span>邁向無紙化醫療管理</span></a></li>
+        <li><a href="#support"><strong>慢性病個案管理</strong><span>個案追蹤與照護管理</span></a></li>
+        <li><a href="#medical-records"><strong>遠距醫療服務方案</strong><span>延伸醫療服務與應用場域</span></a></li>
+        <li><a href="#support"><strong>醫療資訊整合方案</strong><span>串聯醫療資訊與作業流程</span></a></li>
+        <li><a href="#addons"><strong>診所資訊安全與備份</strong><span>強化資料保存與安全管理</span></a></li>
+        <li><a href="#addons"><strong>病患服務體驗升級</strong><span>預約・候診・關懷服務</span></a></li>
+        <li><a href="#clinic-system"><strong>專科診所資訊管理</strong><span>符合不同科別的作業需求</span></a></li>
+        <li><a href="#support"><strong>多院所管理整合</strong><span>多診所資訊與作業管理</span></a></li>
+      </ul></details></li>
+      <li><a href="#about">關於耀聖</a></li>
+      <li><a href="#contact">聯絡我們</a></li>
+    </ul>
+    <a class="login" href="https://www.realsun.com.tw/form/contact_us" target="_blank" rel="noopener noreferrer">洽詢服務</a>
+    <details class="mobile-nav">
+      <summary><span class="sr-only">網站選單</span><span class="menu-icon" aria-hidden="true"></span></summary>
+      <ul class="mobile-menu">
+        <li><a href="#news">健保訊息 <span lang="en">NHI UPDATES</span></a></li>
+        <li><a href="#home">首頁 <span lang="en">HOME</span></a></li>
+        <li><a href="#products">服務項目 <span lang="en">SERVICES</span></a>
+          <ul class="mobile-submenu">
+            <li><a href="#clinic-system"><strong>醫療資訊管理系統</strong><span>六代雲系統．標準版・旗艦版．藥局</span></a></li>
+            <li><a href="#medical-records"><strong>電子病歷管理</strong><span>電子病歷・圖形病歷</span></a></li>
+            <li><a href="#news"><strong>健保申報服務</strong><span>網路申報・申報管理</span></a></li>
+            <li><a href="#addons"><strong>網路預約掛號</strong><span>線上預約・預約管理</span></a></li>
+            <li><a href="#medical-records"><strong>視訊診療服務</strong><span>視訊診療・遠距應用</span></a></li>
+            <li><a href="#support"><strong>醫療資訊整合</strong><span>轉診轉檢・跨院介接</span></a></li>
+            <li><a href="#addons"><strong>診所加值應用</strong><span>IC 卡・藥袋・候診看板</span></a></li>
+            <li><a href="#support"><strong>資料備份與安全</strong><span>遠端備份・資料保護</span></a></li>
+          </ul>
+        </li>
+        <li><a href="#support">解決方案 <span lang="en">SOLUTIONS</span></a>
+          <ul class="mobile-submenu">
+            <li><a href="#support"><strong>診所開業整合方案</strong><span>從籌備到開業，一站式資訊規劃</span></a></li>
+            <li><a href="clinic_location_evaluator.html"><strong>診所開業地點</strong><span>一鍵解析在地的醫療需求</span></a></li>
+            <li><a href="#products"><strong>診所營運效率提升</strong><span>優化看診流程與院務管理</span></a></li>
+            <li><a href="#medical-records"><strong>電子病歷數位轉型</strong><span>邁向無紙化醫療管理</span></a></li>
+            <li><a href="#support"><strong>慢性病個案管理</strong><span>個案追蹤與照護管理</span></a></li>
+            <li><a href="#medical-records"><strong>遠距醫療服務方案</strong><span>延伸醫療服務與應用場域</span></a></li>
+            <li><a href="#support"><strong>醫療資訊整合方案</strong><span>串聯醫療資訊與作業流程</span></a></li>
+            <li><a href="#addons"><strong>診所資訊安全與備份</strong><span>強化資料保存與安全管理</span></a></li>
+            <li><a href="#addons"><strong>病患服務體驗升級</strong><span>預約・候診・關懷服務</span></a></li>
+            <li><a href="#clinic-system"><strong>專科診所資訊管理</strong><span>符合不同科別的作業需求</span></a></li>
+            <li><a href="#support"><strong>多院所管理整合</strong><span>多診所資訊與作業管理</span></a></li>
+          </ul>
+        </li>
+        <li><a href="#about">關於耀聖 <span lang="en">ABOUT</span></a></li>
+        <li><a href="#contact">聯絡我們 <span lang="en">CONTACT</span></a></li>
+        <li class="mobile-menu-action"><a href="#contact">預約免費諮詢</a></li>
+      </ul>
+    </details>
+  </nav>
+</header>
+<main id="home">
+<section class="hero" aria-labelledby="hero-title"><img class="hero-image" src="img/2149611211.jpg" alt="醫護人員在診間使用筆記型電腦" fetchpriority="high"><div class="wrap hero-content"><p class="eyebrow">醫療資訊管理系統・六代雲系統</p><h1 id="hero-title" tabindex="-1">讓診所流程更順，<br>讓醫療照護更專注</h1><p class="hero-copy"><strong>把日常作業接起來，讓團隊專注照護。</strong><span>整合掛號、預約、診間、電子病歷與健保申報，依院所需求搭配服務項目與導入方式。</span></p><div class="actions"><a class="button primary" href="#products">瀏覽服務項目 <span class="arrow" aria-hidden="true">↗</span></a><a class="button outline" href="#contact">洽詢院所方案 <span class="arrow" aria-hidden="true">→</span></a></div></div></section>
+<section class="wrap stats" id="about" aria-labelledby="stats-title">
+  <h2 id="stats-title">從資訊系統到院所日常，持續陪伴第一線</h2>
+  <dl>
+    <div><dt>年醫療資訊經驗</dt><dd><span class="sr-only">30+</span><span aria-hidden="true" data-count-to="30" data-suffix="+">30+</span></dd></div>
+    <div><dt>服務院所（家）</dt><dd><span class="sr-only">3,000</span><span aria-hidden="true" data-count-to="3000">3,000</span></dd></div>
+    <div><dt>觸及醫護人員（位）</dt><dd><span class="sr-only">6,000</span><span aria-hidden="true" data-count-to="6000">6,000</span></dd></div>
+  </dl>
+</section>
+<section class="announcement" id="news" aria-labelledby="news-title">
+  <div class="wrap section-title"><h2 id="news-title">耀聖新訊</h2></div>
+  <div class="wrap news-layout">
+    <div class="news-categories" role="group" aria-label="公告分類">
+      <button class="news-category" type="button" data-news-filter="all" aria-pressed="true" aria-controls="news-list">最新消息</button>
+      <button class="news-category" type="button" data-news-filter="nhi" aria-pressed="false" aria-controls="news-list">健保公告</button>
+      <a class="news-category" href="https://www.realsun.com.tw/mn_news_online">News-online</a>
+    </div>
+    <ul class="news-list" id="news-list" role="list">
+      <li data-news-category="nhi"><time datetime="2026-04-30">2026-04-30</time><span>【健保署】「健保卡上傳率輔導作業」之指標報表已開放至健保資訊網服務系統（VPN）供醫事服務機構查閱</span></li>
+      <li><time datetime="2026-04-30">2026-04-30</time><span>【醫師公會】114年度執行業務所得報稅，彙整申報說明與試算範例</span></li>
+      <li data-news-category="nhi"><time datetime="2026-04-15">2026-04-15</time><span>【健保署】公告修訂「115-116年度全民健康保險提升基層護理人員照護品質獎勵方案」</span></li>
+      <li><time datetime="2026-04-09">2026-04-09</time><span>【疾管署】114-115年度COVID-19疫苗接種計畫_1150311修正版</span></li>
+      <li data-news-category="nhi"><time datetime="2026-04-01">2026-04-01</time><span>【健保署】修正「全民健康保險鼓勵院所加強推動腹膜透析與提升照護品質計畫」</span></li>
+    </ul>
+    <div class="news-actions">
+      <a class="news-more card-cta" href="https://www.realsun.com.tw/mn_news_online" data-nhi-url="https://www.realsun.com.tw/mn_news_nhi">看更多 <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+<section class="products" id="products"><div class="wrap"><div class="section-title"><div><p class="eyebrow">服務項目</p><h2>從診所核心系統到日常所需服務</h2><p class="subtext">服務涵蓋醫療資訊管理、電子病歷、健保申報、網路預約掛號、視訊診療、資訊整合、診所加值應用與資料備份安全；依院所作業流程評估合適的組合。</p></div></div><div class="product-grid">
+<article class="card" id="clinic-system"><figure><img src="img/ipowered-medical-diagnostics-displayed-digital-tablet-doctors-office.jpg" alt="診間內的數位設備情境"><figcaption>診所核心系統</figcaption></figure><div class="card-body"><h3>醫療資訊管理系統</h3><p>提供六代雲系統標準版、旗艦版與藥局應用，支援診所日常資訊管理。</p><p class="scenario"><strong>服務重點</strong>依院所作業需求，串接掛號、診間看診、病歷與批價流程。</p><div class="card-foot"><a class="card-cta" href="#contact">了解系統版本 <span aria-hidden="true">→</span></a></div></div></article>
+<article class="card" id="medical-records"><figure><img src="img/34754.jpg" alt="醫療工作站和螢幕情境"><figcaption>病歷與診療</figcaption></figure><div class="card-body"><h3>電子病歷管理</h3><p>提供電子病歷與圖形病歷，並支援視訊診療及遠距應用需求。</p><p class="scenario"><strong>服務重點</strong>協助團隊於診療流程中查閱並記錄病歷資訊。</p><div class="card-foot"><a class="card-cta" href="#contact">了解病歷與診療服務 <span aria-hidden="true">→</span></a></div></div></article>
+<article class="card" id="addons"><figure><img src="img/18432.jpg" alt="院所走廊的觸控顯示設備"><figcaption>院所作業與延伸服務</figcaption></figure><div class="card-body"><h3>診所加值應用</h3><p>涵蓋 IC 卡、藥袋、候診看板、網路預約、跨院資訊介接與資料備份安全。</p><p class="scenario"><strong>服務重點</strong>依院所流程評估所需工具，支援預約、候診及資訊管理。</p><div class="card-foot"><a class="card-cta" href="#contact">洽詢加值應用 <span aria-hidden="true">→</span></a></div></div></article>
+</div></div></section>
+<section class="support" id="support"><div class="wrap"><div class="section-title"><div><p class="eyebrow">解決方案</p><h2>依院所階段與管理需求，規劃合適方案</h2><p class="subtext">從開業整合、營運效率與電子病歷轉型，到個案照護、資訊安全及多院所管理，先釐清流程與需求，再評估系統服務的搭配方式。</p></div></div><div class="feature-grid">
+<article class="card"><figure><img src="img/2147717388.jpg" alt="操作平板電腦的工作情境"><figcaption>診所開業整合方案</figcaption></figure><div class="card-body"><h3>從籌備到開業，一站式資訊規劃</h3><p>盤點院所空間、網路、設備及開業時程，安排系統設定與作業流程演練，協助團隊為正式看診做好準備。</p><div class="card-foot"><a class="card-cta" href="#contact">洽詢開業整合方案 <span aria-hidden="true">→</span></a></div></div></article>
+<article class="card"><figure><img src="img/2149611211.jpg" alt="醫護人員使用電腦的工作情境"><figcaption>診所營運效率提升</figcaption></figure><div class="card-body"><h3>串聯看診流程與院務管理</h3><p>從掛號、候診、診間到批價檢視日常交接，找出資訊重複或流程中斷處，再評估預約、病歷與管理服務如何配合。</p><div class="card-foot"><a class="card-cta" href="#contact">洽詢營運改善方案 <span aria-hidden="true">→</span></a></div></div></article>
+</div></div></section>
+<section class="cases" aria-labelledby="cases-title">
+  <div class="wrap">
+    <div class="section-title"><div><h2 id="cases-title">解決方案應用情境</h2><p class="subtext">以開業導入、系統轉換及預約候診為例，了解各類方案如何對應院所實際流程。</p></div></div>
+    <div class="case-grid">
+      <article class="case-card">
+        <figure><img src="img/18432.jpg" alt="院所走廊與觸控設備的情境照片"><figcaption>新診所開業</figcaption></figure>
+        <div class="case-body">
+          <h3>開診前，先把掛號到批價的流程走一遍</h3>
+          <p class="case-excerpt">設備到位後，團隊可以模擬一次完整門診：從病人報到、診間看診到櫃檯批價，逐步確認每個角色要做什麼、交接時需要哪些資訊。</p>
+          <div class="case-notes">
+            <details><summary><small>應用情境示例</small><strong>看開業準備重點</strong></summary><p>先盤點網路、讀卡機和印表機，再安排櫃檯與診間一起演練。把操作疑問、負責人與開診前要確認的事項記在同一份清單。</p></details>
+            <ul class="case-tags" aria-label="主題"><li>#診所開業</li><li>#設備盤點</li><li>#上線演練</li></ul>
+          </div>
+        </div>
+      </article>
+      <article class="case-card">
+        <figure><img src="img/34754.jpg" alt="診間內的醫療工作站情境照片"><figcaption>既有院所換系統</figcaption></figure>
+        <div class="case-body">
+          <h3>換系統前，先確認舊資料怎麼接、日常作業怎麼走</h3>
+          <p class="case-excerpt">先列出必須查得到的歷史資料，再用同仁熟悉的掛號、查閱病歷和批價流程試走新系統，找出資料與操作上的落差。</p>
+          <div class="case-notes">
+            <details><summary><small>應用情境示例</small><strong>看換系統評估重點</strong></summary><p>把病歷、預約和帳務資料分開盤點，逐項確認轉移範圍、核對方法及上線後的支援窗口。實際可移轉的資料，以院所現有系統和評估結果為準。</p></details>
+            <ul class="case-tags" aria-label="主題"><li>#系統更換</li><li>#電子病歷</li><li>#資料移轉</li></ul>
+          </div>
+        </div>
+      </article>
+      <article class="case-card">
+        <figure><img src="img/2147717388.jpg" alt="以平板操作數位服務的情境照片"><figcaption>掛號與候診</figcaption></figure>
+        <div class="case-body">
+          <h3>開放網路掛號後，讓病人知道到院下一步</h3>
+          <p class="case-excerpt">病人在線上選時段，到院後完成報到，再從候診看板查看叫號進度。院所可以先釐清網路預約與現場掛號的規則，讓病人和櫃檯同仁都有一致的資訊。</p>
+          <div class="case-notes">
+            <details><summary><small>應用情境示例</small><strong>看候診流程重點</strong></summary><p>先確認可開放的預約時段、名額與取消方式，再演練病人報到、過號與改約的處理流程。看板顯示內容與介接方式依院所設定及評估結果確認。</p></details>
+            <ul class="case-tags" aria-label="主題"><li>#網路掛號</li><li>#候診看板</li><li>#櫃檯作業</li></ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="cta" id="contact" aria-labelledby="contact-title">
+  <div class="contact-backdrop" aria-hidden="true">
+    <img src="img/ipowered-medical-diagnostics-displayed-digital-tablet-doctors-office.jpg" alt="">
+  </div>
+  <div class="wrap">
+    <div class="contact-heading">
+      <h2 id="contact-title">一起盤點院所的服務與管理需求</h2>
+      <p>告訴我們院所階段、作業流程與希望改善的問題，進一步評估服務項目及解決方案。</p>
+    </div>
+    <div class="contact-options">
+      <article class="contact-option">
+        <h3>預約服務諮詢</h3>
+        <span class="contact-icon calendar" aria-hidden="true"></span>
+        <p>說明院所科別與目前需求，討論系統服務及後續導入安排。</p>
+        <a class="contact-action" href="tel:+886285123363" aria-label="預約產品介紹">預約</a>
+      </article>
+      <article class="contact-option">
+        <h3>服務項目</h3>
+        <span class="contact-icon screen" aria-hidden="true"></span>
+        <p>了解醫療資訊管理、電子病歷與院所加值應用等服務內容。</p>
+        <a class="contact-action" href="#products" aria-label="查看服務項目">了解更多</a>
+      </article>
+      <article class="contact-option">
+        <h3>解決方案</h3>
+        <span class="contact-icon tiles" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <p>依開業、營運、病歷轉型與管理需求，了解可評估的方案方向。</p>
+        <a class="contact-action" href="#support" aria-label="查看解決方案">了解更多</a>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-company">
+        <a class="brand" href="#home"><img src="RS_logo.svg" width="739" height="190" alt="耀聖資訊首頁"></a>
+        <p>陪伴診所把醫療資訊用在現場，讓數位系統真正運作。</p>
+        <details class="service-phones">
+          <summary>健保區域服務網</summary>
+          <ul role="list" aria-label="區域服務電話">
+            <li><a href="tel:+886285123363"><strong>總公司</strong><span class="service-number">02-8512-3363</span></a></li>
+            <li><a href="tel:+886285123855"><strong>台北</strong><span class="service-number">02-8512-3855</span></a></li>
+            <li><a href="tel:+88634961095"><strong>桃園</strong><span class="service-number">03-496-1095</span></a></li>
+            <li><a href="tel:+88635153595"><strong>新竹</strong><span class="service-number">03-515-3595</span></a></li>
+            <li><a href="tel:+886423599889"><strong>台中</strong><span class="service-number">04-2359-9889</span></a></li>
+            <li><a href="tel:+88652840310"><strong>嘉義</strong><span class="service-number">05-284-0310</span></a></li>
+            <li><a href="tel:+88663318373"><strong>台南</strong><span class="service-number">06-331-8373</span></a></li>
+            <li><a href="tel:+88678114110"><strong>高雄</strong><span class="service-number">07-811-4110</span></a></li>
+          </ul>
+        </details>
+      </div>
+      <section class="footer-col" aria-labelledby="footer-services-title">
+        <h2 id="footer-services-title">服務項目</h2>
+        <ul class="footer-links">
+          <li><a href="#clinic-system">醫療資訊管理系統</a></li>
+          <li><a href="#medical-records">電子病歷管理</a></li>
+          <li><a href="#news">健保申報服務</a></li>
+          <li><a href="#addons">網路預約掛號</a></li>
+          <li><a href="#medical-records">視訊診療服務</a></li>
+          <li><a href="#support">醫療資訊整合</a></li>
+          <li><a href="#addons">診所加值應用</a></li>
+          <li><a href="#support">資料備份與安全</a></li>
+        </ul>
+      </section>
+      <section class="footer-col" aria-labelledby="footer-solutions-title">
+        <h2 id="footer-solutions-title">解決方案</h2>
+        <ul class="footer-links">
+          <li><a href="#support">診所開業整合方案</a></li>
+          <li><a href="clinic_location_evaluator.html">診所開業地點</a></li>
+          <li><a href="#products">診所營運效率提升</a></li>
+          <li><a href="#medical-records">電子病歷數位轉型</a></li>
+          <li><a href="#support">慢性病個案管理</a></li>
+          <li><a href="#medical-records">遠距醫療服務方案</a></li>
+          <li><a href="#support">醫療資訊整合方案</a></li>
+          <li><a href="#addons">診所資訊安全與備份</a></li>
+          <li><a href="#addons">病患服務體驗升級</a></li>
+          <li><a href="#clinic-system">專科診所資訊管理</a></li>
+          <li><a href="#support">多院所管理整合</a></li>
+        </ul>
+      </section>
+      <nav class="footer-col" aria-labelledby="footer-nav-title">
+        <h2 id="footer-nav-title">網站導覽</h2>
+        <ul class="footer-links">
+          <li><a href="#products">服務項目</a></li>
+          <li><a href="#news">健保訊息</a></li>
+          <li><a href="#about">關於耀聖</a></li>
+          <li><a href="#contact">聯絡我們</a></li>
+        </ul>
+      </nav>
+      <section class="footer-col" aria-labelledby="footer-contact-title">
+        <h2 id="footer-contact-title">聯絡資訊</h2>
+        <div class="footer-contact-list">
+          <a href="tel:+886285123363"><svg class="footer-contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-3 2a15 15 0 0 0 6 6l2-3 5 2v4c0 1-1 2-2 2A17 17 0 0 1 3 5c0-1 1-2 2-2Z"/></svg><span>總公司 (02) 8512-3363</span></a>
+          <p><svg class="footer-contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>新北市三重區光復路一段 80 號 4 樓</span></p>
+        </div>
+      </section>
+    </div>
+    <div class="bottom"><span>© 2026 耀聖資訊科技股份有限公司</span><span>隱私權政策</span></div>
+  </div>
+</footer>
+<button class="clinic-helper-launcher" type="button" aria-expanded="false" aria-controls="clinic-helper-panel">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H11l-5.5 4v-4.2A2.5 2.5 0 0 1 4 13.5z"/><path d="M8 8h8M8 11.5h5"/></svg>
+  <span>診所開業小幫手</span>
+</button>
+<section class="clinic-helper-panel" id="clinic-helper-panel" role="dialog" aria-labelledby="clinic-helper-title" aria-modal="false" hidden>
+  <header class="clinic-helper-head">
+    <div><strong id="clinic-helper-title">診所開業小幫手</strong><span>依手冊整理內容，提供開業準備參考</span></div>
+    <button class="clinic-helper-close" type="button" aria-label="關閉小幫手">×</button>
+  </header>
+  <p class="clinic-helper-notice">目前為本機試用版，使用手冊資料比對，尚未連接 AI。請勿輸入病患資料、身分證號、聯絡方式或帳戶資料。</p>
+  <div class="clinic-helper-messages" aria-live="polite" aria-relevant="additions text">
+    <div class="clinic-helper-message">你好！可以詢問開業地點分析、檢查準備、空間規劃、物品盤點或人員面談。答案會附上手冊頁碼。</div>
+  </div>
+  <div class="clinic-helper-suggestions" aria-label="建議問題">
+    <button class="clinic-helper-suggestion" type="button">開業物品怎麼盤點？</button>
+    <button class="clinic-helper-suggestion" type="button">裝潢前要注意什麼？</button>
+    <button class="clinic-helper-suggestion" type="button">如何分析開業地點？</button>
+  </div>
+  <form class="clinic-helper-form">
+    <label class="sr-only" for="clinic-helper-input">輸入診所開業問題</label>
+    <input class="clinic-helper-input" id="clinic-helper-input" name="question" type="text" maxlength="300" autocomplete="off" placeholder="輸入你的問題…" required>
+    <button class="clinic-helper-send" type="submit" disabled>送出</button>
+  </form>
+</section>
+<nav class="mobile-quick-actions" aria-label="快速聯絡">
+  <a class="quick-line" href="#contact" aria-label="LINE 諮詢，前往聯絡區">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 11.2c0 4.1-4 7.4-8.9 7.4-.9 0-1.8-.1-2.6-.3l-4.1 1.4 1.3-3.3c-2.1-1.3-3.5-3.2-3.5-5.2 0-4.1 4-7.4 8.9-7.4s8.9 3.3 8.9 7.4Z"/></svg>
+    <span>LINE 諮詢</span>
+  </a>
+  <a class="quick-form" href="https://www.realsun.com.tw/form/contact_us" target="_blank" rel="noopener noreferrer" aria-label="填寫聯絡表單">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+    <span>填表</span>
+  </a>
+</nav>
+<button class="back-to-top" type="button" aria-label="回到頂端" hidden><span class="back-to-top-icon" aria-hidden="true"></span></button>
+<script>
+  const siteHeader = document.querySelector('.top');
+  const backToTop = document.querySelector('.back-to-top');
+  const mobileQuickActions = document.querySelector('.mobile-quick-actions');
+  let previousScrollY = window.scrollY;
+  let scrollDirection = 0;
+  let directionDistance = 0;
+  function syncScrollControls() {
+    const currentScrollY = window.scrollY;
+    const scrollDelta = currentScrollY - previousScrollY;
+    const nextDirection = Math.sign(scrollDelta);
+    if (nextDirection && nextDirection !== scrollDirection) {
+      scrollDirection = nextDirection;
+      directionDistance = Math.abs(scrollDelta);
+    } else if (nextDirection) {
+      directionDistance += Math.abs(scrollDelta);
+    }
+    siteHeader.classList.toggle('is-scrolled', currentScrollY > 0);
+    if (currentScrollY <= 120) {
+      siteHeader.classList.remove('is-hidden');
+      mobileQuickActions.classList.remove('is-visible');
+      document.body.classList.remove('has-mobile-actions');
+      directionDistance = 0;
+    } else if (directionDistance >= 8 && scrollDirection > 0) {
+      siteHeader.classList.add('is-hidden');
+      mobileQuickActions.classList.remove('is-visible');
+      document.body.classList.remove('has-mobile-actions');
+      directionDistance = 0;
+    } else if (directionDistance >= 8 && scrollDirection < 0) {
+      siteHeader.classList.remove('is-hidden');
+      const showMobileActions = window.matchMedia('(max-width: 740px)').matches && currentScrollY > 160;
+      mobileQuickActions.classList.toggle('is-visible', showMobileActions);
+      document.body.classList.toggle('has-mobile-actions', showMobileActions);
+      directionDistance = 0;
+    }
+    backToTop.hidden = currentScrollY <= 400;
+    const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollProgress = scrollableHeight > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollableHeight * 100)) : 0;
+    backToTop.style.setProperty('--scroll-progress', `${scrollProgress}%`);
+    previousScrollY = currentScrollY;
+  }
+  window.addEventListener('scroll', syncScrollControls, { passive: true });
+  window.addEventListener('pageshow', syncScrollControls);
+  syncScrollControls();
+  backToTop.addEventListener('click', () => {
+    document.querySelector('#hero-title').focus({preventScroll:true});
+    window.scrollTo({top:0});
+  });
+
+  const desktopMenus = [...siteHeader.querySelectorAll('.desktop-nav > li > details')];
+  document.addEventListener('click', event => {
+    for (const menu of desktopMenus) {
+      if (menu.open && !menu.contains(event.target)) menu.open = false;
+    }
+  });
+  siteHeader.addEventListener('keydown', event => {
+    if (event.key !== 'Escape') return;
+    const menu = desktopMenus.find(item => item.open && item.contains(event.target));
+    if (!menu) return;
+    menu.open = false;
+    menu.querySelector('summary').focus();
+  });
+
+  const mobileMenu = document.querySelector('.mobile-nav');
+  mobileMenu.addEventListener('click', event => {
+    if (event.target.closest('a')) mobileMenu.open = false;
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Escape' || !mobileMenu.open) return;
+    mobileMenu.open = false;
+    mobileMenu.querySelector('summary').focus();
+  });
+
+  const newsFilters = document.querySelectorAll('[data-news-filter]');
+  const newsItems = document.querySelectorAll('#news-list li');
+  const newsMore = document.querySelector('.news-more');
+  const allNewsUrl = newsMore.href;
+  for (const filter of newsFilters) {
+    filter.addEventListener('click', () => {
+      const category = filter.dataset.newsFilter;
+      for (const button of newsFilters) {
+        button.setAttribute('aria-pressed', button === filter);
+      }
+      for (const item of newsItems) {
+        item.hidden = category !== 'all' && item.dataset.newsCategory !== category;
+      }
+      newsMore.href = category === 'nhi' ? newsMore.dataset.nhiUrl : allNewsUrl;
+    });
+  }
+
+  const stats = document.querySelector('.stats dl');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if ('IntersectionObserver' in window && !reducedMotion.matches) {
+    const numbers = [...stats.querySelectorAll('[data-count-to]')].map(element => ({
+      element,
+      target: Number(element.dataset.countTo),
+      suffix: element.dataset.suffix || '',
+    }));
+    const format = new Intl.NumberFormat('zh-TW');
+    const duration = 1200;
+    const display = progress => {
+      for (const {element, target, suffix} of numbers) {
+        element.textContent = format.format(Math.floor(target * progress)) + suffix;
+      }
+    };
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.intersectionRatio < 0.35) return;
+      observer.disconnect();
+      const start = performance.now();
+      display(reducedMotion.matches ? 1 : 0);
+      if (reducedMotion.matches) return;
+      const animate = time => {
+        const elapsed = Math.max(0, time - start);
+        const progress = reducedMotion.matches ? 1 : Math.min(elapsed / duration, 1);
+        display(1 - (1 - progress) ** 3);
+        if (progress < 1) requestAnimationFrame(animate);
+      };
+      requestAnimationFrame(animate);
+    }, {threshold: 0.35});
+    observer.observe(stats);
+  }
+</script>
+<script src="clinic-opening-helper-data.js"></script>
+<script src="clinic-opening-helper.js"></script>
+</body>
+</html>
